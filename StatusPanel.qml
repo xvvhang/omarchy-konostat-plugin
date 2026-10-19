@@ -4,7 +4,7 @@ import qs.Ui
 
 Panel {
   id: root
-  moduleName: "alec.system-status"
+  moduleName: "xvvhang.system-status"
   manageIpc: false
   property var hostWidget: null
   property var anchorItem: null

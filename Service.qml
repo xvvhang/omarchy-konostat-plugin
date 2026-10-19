@@ -32,7 +32,7 @@ Item {
   Timer { id: retry; interval: 5000; onTriggered: backend.running = true }
   Timer { id: stale; interval: 10000; onTriggered: { root.ready = false; root.error = "Data update timed out" } }
   IpcHandler {
-    target: "alec.system-status"
+    target: "xvvhang.system-status"
     function status(): string { return JSON.stringify({ready: root.ready, error: root.error, data: root.state}) }
   }
 }
