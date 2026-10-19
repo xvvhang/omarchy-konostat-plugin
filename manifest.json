@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "id": "xvvhang.system-status",
-  "name": "System Status",
+  "id": "konochi.konopulse",
+  "name": "Konopulse",
   "version": "1.0.0",
   "author": "alec",
   "license": "MIT",
@@ -9,7 +9,7 @@
   "kinds": ["service", "bar-widget"],
   "entryPoints": {"service": "Service.qml", "barWidget": "Widget.qml"},
   "barWidget": {
-    "displayName": "System Status",
+    "displayName": "Konopulse",
     "category": "System",
     "allowMultiple": false,
     "defaultSection": "right",
