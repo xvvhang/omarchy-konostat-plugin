@@ -4,7 +4,7 @@ import qs.Ui
 
 BarWidget {
   id: root
-  moduleName: "konochi.konostate"
+  moduleName: "konochi.konostat"
   readonly property var service: bar?.shell?.serviceFor(moduleName)
   readonly property var state: service ? service.state : ({})
   readonly property bool ready: service?.ready ?? false
@@ -106,7 +106,7 @@ BarWidget {
     hasVisualContent: true
     fixedWidth: root.vertical ? -1 : display.implicitWidth + Math.max(0, Style.bar.iconSlot - Style.bar.iconCanvas)
     fixedHeight: root.vertical ? display.implicitHeight + Style.space(12) : -1
-    tooltipText: "Konostate · Click to open"
+    tooltipText: "Konostat · Click to open"
     onPressed: function(b) { if (b === Qt.LeftButton) panel.toggle() }
     Grid {
       id: display

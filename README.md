@@ -1,8 +1,8 @@
-# Konostate
+# Konostat
 
 Part of **Konochi**, a personal Omarchy plugin series by Alec Xu.
 
-A native Omarchy / Quickshell plugin. Plugin ID: `konochi.konostate`.
+A native Omarchy / Quickshell plugin. Plugin ID: `konochi.konostat`.
 
 ## Usage
 
@@ -50,12 +50,12 @@ refreshed every 30 seconds. Collection failures are retried automatically.
 ## Management and diagnostics
 
 ```sh
-omarchy plugin validate ~/.config/omarchy/plugins/konochi.konostate
-omarchy plugin enable konochi.konostate
-omarchy plugin disable konochi.konostate
-omarchy-shell konochi.konostate status
-omarchy-shell shell summon konochi.konostate '{}'
-python3 -B ~/.config/omarchy/plugins/konochi.konostate/collect.py --once
+omarchy plugin validate ~/.config/omarchy/plugins/konochi.konostat
+omarchy plugin enable konochi.konostat
+omarchy plugin disable konochi.konostat
+omarchy-shell konochi.konostat status
+omarchy-shell shell summon konochi.konostat '{}'
+python3 -B ~/.config/omarchy/plugins/konochi.konostat/collect.py --once
 ```
 
 Run `python3 -B -m unittest -v test_collect.py` from this directory to run tests.
@@ -67,9 +67,9 @@ Requires Omarchy Quattro and Python 3. NVIDIA metrics optionally use
 setup is required.
 
 ```sh
-omarchy plugin add https://github.com/xvvhang/omarchy-konostate-plugin --enable
-omarchy plugin disable konochi.konostate
-omarchy plugin remove konochi.konostate
+omarchy plugin add https://github.com/xvvhang/omarchy-konostat-plugin --enable
+omarchy plugin disable konochi.konostat
+omarchy plugin remove konochi.konostat
 ```
 
 Removal does not change hardware settings, other plugins, or unrelated user
