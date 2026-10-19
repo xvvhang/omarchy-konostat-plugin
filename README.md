@@ -4,6 +4,10 @@ Part of **Konochi**, a personal Omarchy plugin series by Alec Xu.
 
 A native Omarchy / Quickshell plugin. Plugin ID: `konochi.konostat`.
 
+## Preview
+
+![Konostat panel showing CPU, GPU, memory, storage, network, fans, temperatures, and switches for bar metrics](preview.png)
+
 ## Usage
 
 - Left-click the system status icon in the bar to open the panel. Press Escape
