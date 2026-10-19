@@ -4,7 +4,7 @@ import qs.Ui
 
 BarWidget {
   id: root
-  moduleName: "xvvhang.system-status"
+  moduleName: "konochi.konopulse"
   readonly property var service: bar?.shell?.serviceFor(moduleName)
   readonly property var state: service ? service.state : ({})
   readonly property bool ready: service?.ready ?? false
@@ -106,7 +106,7 @@ BarWidget {
     hasVisualContent: true
     fixedWidth: root.vertical ? -1 : display.implicitWidth + Math.max(0, Style.bar.iconSlot - Style.bar.iconCanvas)
     fixedHeight: root.vertical ? display.implicitHeight + Style.space(12) : -1
-    tooltipText: "System Status · Click to open"
+    tooltipText: "Konopulse · Click to open"
     onPressed: function(b) { if (b === Qt.LeftButton) panel.toggle() }
     Grid {
       id: display

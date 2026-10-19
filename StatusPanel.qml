@@ -4,7 +4,7 @@ import qs.Ui
 
 Panel {
   id: root
-  moduleName: "xvvhang.system-status"
+  moduleName: "konochi.konopulse"
   manageIpc: false
   property var hostWidget: null
   property var anchorItem: null
@@ -29,7 +29,7 @@ Panel {
         id: column
         width: content.width
         spacing: Style.space(14)
-        Text { text: "System Status"; color: root.barForeground; font.family: Style.font.family; font.pixelSize: Style.font.body * 1.3 }
+        Text { text: "Konopulse"; color: root.barForeground; font.family: Style.font.family; font.pixelSize: Style.font.body * 1.3 }
         Row {
           width: parent.width
           spacing: Style.space(10)

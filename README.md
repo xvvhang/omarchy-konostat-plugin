@@ -1,6 +1,8 @@
-# System Status / 系统状态
+# Konopulse / 系统状态
 
-Omarchy / Quickshell 原生插件，ID：`xvvhang.system-status`。
+**Konochi** 系列插件，由 Alec Xu 开发。
+
+Omarchy / Quickshell 原生插件，ID：`konochi.konopulse`。
 
 ## 使用
 
@@ -31,12 +33,12 @@ Omarchy / Quickshell 原生插件，ID：`xvvhang.system-status`。
 ## 管理与诊断
 
 ```sh
-omarchy plugin validate ~/.config/omarchy/plugins/xvvhang.system-status
-omarchy plugin enable xvvhang.system-status
-omarchy plugin disable xvvhang.system-status
-omarchy-shell xvvhang.system-status status
-omarchy-shell shell summon xvvhang.system-status '{}'
-python3 -B ~/.config/omarchy/plugins/xvvhang.system-status/collect.py --once
+omarchy plugin validate ~/.config/omarchy/plugins/konochi.konopulse
+omarchy plugin enable konochi.konopulse
+omarchy plugin disable konochi.konopulse
+omarchy-shell konochi.konopulse status
+omarchy-shell shell summon konochi.konopulse '{}'
+python3 -B ~/.config/omarchy/plugins/konochi.konopulse/collect.py --once
 ```
 
 在本目录执行 `python3 -B -m unittest -v test_collect.py` 运行测试。
@@ -48,8 +50,8 @@ python3 -B ~/.config/omarchy/plugins/xvvhang.system-status/collect.py --once
 
 ```sh
 omarchy plugin add https://github.com/xvvhang/omarchy-system-status --enable
-omarchy plugin disable xvvhang.system-status
-omarchy plugin remove xvvhang.system-status
+omarchy plugin disable konochi.konopulse
+omarchy plugin remove konochi.konopulse
 ```
 
 卸载不修改硬件、其他插件或用户文件。删除前请备份尚未推送的开发修改。
