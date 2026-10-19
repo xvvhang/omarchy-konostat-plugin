@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "alec.system-status",
+  "name": "System Status",
+  "version": "1.0.0",
+  "author": "alec",
+  "license": "MIT",
+  "description": "Live CPU, GPU, memory, storage, network, fans and temperatures with configurable bar metrics",
+  "kinds": ["service", "bar-widget"],
+  "entryPoints": {"service": "Service.qml", "barWidget": "Widget.qml"},
+  "barWidget": {
+    "displayName": "System Status",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {"iconOnly": true, "showCpu": true, "showGpu": false, "showMemory": true, "showStorage": false, "showNetwork": false, "showFan": false, "showTemperature": false},
+    "schema": [
+      {"key": "iconOnly", "type": "boolean", "label": "Icon-only bar"},
+      {"key": "showCpu", "type": "boolean", "label": "CPU"},
+      {"key": "showGpu", "type": "boolean", "label": "GPU"},
+      {"key": "showMemory", "type": "boolean", "label": "Memory"},
+      {"key": "showStorage", "type": "boolean", "label": "Storage"},
+      {"key": "showNetwork", "type": "boolean", "label": "Network"},
+      {"key": "showFan", "type": "boolean", "label": "Fans"},
+      {"key": "showTemperature", "type": "boolean", "label": "Temperature"}
+    ]
+  }
+}
