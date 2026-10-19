@@ -49,7 +49,7 @@ python3 -B ~/.config/omarchy/plugins/konochi.konostate/collect.py --once
 没有额外安装脚本、独立系统服务或提权步骤。
 
 ```sh
-omarchy plugin add https://github.com/xvvhang/omarchy-system-status --enable
+omarchy plugin add https://github.com/xvvhang/konostate --enable
 omarchy plugin disable konochi.konostate
 omarchy plugin remove konochi.konostate
 ```
