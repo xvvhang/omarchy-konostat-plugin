@@ -4,7 +4,7 @@ import qs.Ui
 
 BarWidget {
   id: root
-  moduleName: "alec.system-status"
+  moduleName: "xvvhang.system-status"
   readonly property var service: bar?.shell?.serviceFor(moduleName)
   readonly property var state: service ? service.state : ({})
   readonly property bool ready: service?.ready ?? false
