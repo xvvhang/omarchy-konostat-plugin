@@ -17,11 +17,11 @@ Item {
           root.ready = true
           root.error = ""
           stale.restart()
-        } catch (e) { console.warn("Konostate:", e) }
+        } catch (e) { console.warn("Konostat:", e) }
       }
     }
     stderr: StdioCollector {
-      onStreamFinished: if (text.trim()) console.warn("Konostate:", text.trim())
+      onStreamFinished: if (text.trim()) console.warn("Konostat:", text.trim())
     }
     onExited: {
       root.ready = false
@@ -32,7 +32,7 @@ Item {
   Timer { id: retry; interval: 5000; onTriggered: backend.running = true }
   Timer { id: stale; interval: 10000; onTriggered: { root.ready = false; root.error = "Data update timed out" } }
   IpcHandler {
-    target: "konochi.konostate"
+    target: "konochi.konostat"
     function status(): string { return JSON.stringify({ready: root.ready, error: root.error, data: root.state}) }
   }
 }
