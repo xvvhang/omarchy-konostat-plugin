@@ -1,8 +1,8 @@
-# Konopulse / 系统状态
+# Konostate / 系统状态
 
 **Konochi** 系列插件，由 Alec Xu 开发。
 
-Omarchy / Quickshell 原生插件，ID：`konochi.konopulse`。
+Omarchy / Quickshell 原生插件，ID：`konochi.konostate`。
 
 ## 使用
 
@@ -33,12 +33,12 @@ Omarchy / Quickshell 原生插件，ID：`konochi.konopulse`。
 ## 管理与诊断
 
 ```sh
-omarchy plugin validate ~/.config/omarchy/plugins/konochi.konopulse
-omarchy plugin enable konochi.konopulse
-omarchy plugin disable konochi.konopulse
-omarchy-shell konochi.konopulse status
-omarchy-shell shell summon konochi.konopulse '{}'
-python3 -B ~/.config/omarchy/plugins/konochi.konopulse/collect.py --once
+omarchy plugin validate ~/.config/omarchy/plugins/konochi.konostate
+omarchy plugin enable konochi.konostate
+omarchy plugin disable konochi.konostate
+omarchy-shell konochi.konostate status
+omarchy-shell shell summon konochi.konostate '{}'
+python3 -B ~/.config/omarchy/plugins/konochi.konostate/collect.py --once
 ```
 
 在本目录执行 `python3 -B -m unittest -v test_collect.py` 运行测试。
@@ -50,8 +50,8 @@ python3 -B ~/.config/omarchy/plugins/konochi.konopulse/collect.py --once
 
 ```sh
 omarchy plugin add https://github.com/xvvhang/omarchy-system-status --enable
-omarchy plugin disable konochi.konopulse
-omarchy plugin remove konochi.konopulse
+omarchy plugin disable konochi.konostate
+omarchy plugin remove konochi.konostate
 ```
 
 卸载不修改硬件、其他插件或用户文件。删除前请备份尚未推送的开发修改。
