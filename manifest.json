@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "id": "konochi.konopulse",
-  "name": "Konopulse",
+  "id": "konochi.konostate",
+  "name": "Konostate",
   "version": "1.0.0",
   "author": "alec",
   "license": "MIT",
@@ -9,7 +9,7 @@
   "kinds": ["service", "bar-widget"],
   "entryPoints": {"service": "Service.qml", "barWidget": "Widget.qml"},
   "barWidget": {
-    "displayName": "Konopulse",
+    "displayName": "Konostate",
     "category": "System",
     "allowMultiple": false,
     "defaultSection": "right",
