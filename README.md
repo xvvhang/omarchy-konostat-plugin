@@ -62,7 +62,7 @@ omarchy-shell shell summon konochi.konostat '{}'
 python3 -B ~/.config/omarchy/plugins/konochi.konostat/collect.py --once
 ```
 
-Run `python3 -B -m unittest -v test_collect.py` from this directory to run tests.
+Run `python3 -B -m unittest discover -v` from this directory to run tests.
 
 ## Install and remove
 
