@@ -119,7 +119,7 @@ BarWidget {
         width: Style.bar.iconCanvas
         height: width
         // nf-md-view_dashboard (U+F056E).
-        OpticalGlyph { anchors.fill: parent; text: "\u{f056e}"; color: button.foreground; fontFamily: button.fontFamily; fontSize: Style.bar.iconFont }
+        OpticalGlyph { anchors.fill: parent; text: "\u{f056e}"; color: button.foreground; fontFamily: button.fontFamily; fontSize: Style.bar.iconFont * 1.2 }
       }
       Repeater {
         model: root.barMetrics

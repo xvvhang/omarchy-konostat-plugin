@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "konochi.konostat",
   "name": "Konostat",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "alec",
   "license": "MIT",
   "description": "Live CPU, GPU, memory, storage, network, fans and temperatures with configurable bar metrics",
