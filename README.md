@@ -27,8 +27,8 @@ A native Omarchy / Quickshell plugin. Plugin ID: `konochi.konostat`.
 
 ## Data sources and limitations
 
-Uses only Python 3's standard library. No network access, package installation,
-hardware configuration changes, or sudo privileges are required.
+Uses only Python 3's standard library. No network access or package installation
+is required.
 A single shared collector updates every two seconds; storage information is
 refreshed every 30 seconds. Collection failures are retried automatically.
 
